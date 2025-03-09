@@ -15,10 +15,9 @@ project "ModernJSON"
 
     files
     {
+        "src/*.cpp",
         "include/nlohmann/**.hpp",
-        "include/nlohmann/**.cpp",
-        "single_include/nlohmann/**.hpp",
-        "single_include/nlohmann/**.cpp"
+        "single_include/nlohmann/**.hpp"
     }
 
     includedirs
