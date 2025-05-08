@@ -30,16 +30,16 @@ project "ModernJSON"
 
     filter "configurations:Debug"
         runtime "Debug"
-        linkoptions { "/MDd" }  -- Enable Link Time Code Generation and Incremental linking
-        symbols "on"
+        buildoptions { "/MDd" } 
+        symbols "On"
 
     filter "configurations:Optimized"
         runtime "Release"
-        linkoptions { "/MDd" }  -- Enable Link Time Code Generation and Incremental linking
-        optimize "on"
+        buildoptions { "/MDd" } 
+        optimize "On"
 
     filter "configurations:Release"
         runtime "Release"
-        optimize "on"
-        linkoptions { "/MD" }  -- Enable Link Time Code Generation and Incremental linking
-        symbols "off"
+        optimize "On"
+        buildoptions { "/MD" } 
+        symbols "Off"
