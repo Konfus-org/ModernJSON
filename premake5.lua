@@ -15,17 +15,17 @@ project "ModernJSON"
 
     files
     {
-        "src/*.cpp",
-        "include/nlohmann/**.hpp",
-        "single_include/nlohmann/**.hpp",
+        "./src/*.cpp",
+        "./include/nlohmann/**.hpp",
+        "./single_include/nlohmann/**.hpp",
         "./**.md",
         "./**.lua",
     }
 
     includedirs
     {
-        "include",
-        "single_include"
+        "./include",
+        "./single_include"
     }
 
     filter "configurations:Debug"
