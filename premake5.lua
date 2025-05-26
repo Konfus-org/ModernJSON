@@ -4,6 +4,11 @@ project "ModernJSON"
     cppdialect "C++17"
     staticruntime "Off"
 
+    flags
+    {
+        "MultiProcessorCompile"
+    }
+
     if OutputIntermediateDir == nil or OutputTargetDir == nil then
         targetdir ("Build/bin/%{prj.name}/")
         objdir    ("Build/obj/%{prj.name}/")
