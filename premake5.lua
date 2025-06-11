@@ -9,8 +9,7 @@ project "nlohmann_json"
         "./src/*.cpp",
         "./include/nlohmann/**.hpp",
         "./single_include/nlohmann/**.hpp",
-        "./**.md",
-        "./**.lua",
+        "./**.md"
     }
     includedirs
     {
